@@ -79,3 +79,15 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+
+SHRP_DEVICE_CODE := 7306F
+SHRP_PATH := device/lenovo/7306F
+SHRP_MAINTAINER := smily
+SHRP_DEVICE_TYPE := A/B
+SHRP_AB := true
+SHRP_OTG := /usb_otg
+SHRP_EXTERNAL := /external_sd
+SHRP_LITE := true
+
+
+
