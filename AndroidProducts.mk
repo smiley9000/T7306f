@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_7306F.mk
+     $(LOCAL_DIR)/twrp_7306F.mk
