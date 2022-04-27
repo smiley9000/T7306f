@@ -16,21 +16,21 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+# Release name
+PRODUCT_RELEASE_NAME := a11q
 
-# Inherit from 7306F device
-$(call inherit-product, device/lenovo/7306F/device.mk)
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/lenovo/7305F/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := 7306F
-PRODUCT_NAME := omni_7306F
+PRODUCT_NAME := twrp_7306F
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-7306F
 PRODUCT_MANUFACTURER := lenovo
