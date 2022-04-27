@@ -17,7 +17,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := a11q
+PRODUCT_RELEASE_NAME := 7360F
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/lenovo/7305F/device.mk)
+$(call inherit-product, device/lenovo/7306F/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := 7306F
