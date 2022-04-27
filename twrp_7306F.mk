@@ -17,7 +17,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := 7360F
+PRODUCT_RELEASE_NAME := 7306F
 
 # Inherit from common AOSP config
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
