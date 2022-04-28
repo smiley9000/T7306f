@@ -83,6 +83,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+TARGET_RECOVERY_FSTAB := device/lenovo/7306F/recovery/root/system/etc/twrp.flags
+
 
 
 
