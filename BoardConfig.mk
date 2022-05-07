@@ -85,6 +85,30 @@ TW_USE_TOOLBOX := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_RECOVERY_FSTAB := device/lenovo/7306F/recovery/root/system/etc/twrp.flags
 
+# System as root
+BOARD_SUPPRESS_SECURE_ERASE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+
+
+# Dynamic Partition
+BOARD_SUPER_PARTITION_SIZE := 4563402752 
+BOARD_SUPER_PARTITION_GROUPS := main
+BOARD_MAIN_SIZE := 4563402752 
+BOARD_MAIN_PARTITION_LIST := \
+    product \
+    system \
+    vendor
+	
+PRODUCT_PLATFORM := mt6761
+BOARD_USES_MTK_HARDWARE := true
+BOARD_HAS_MTK_HARDWARE := true
+TARGET_NO_BOOTLOADER := true
+
+
+# logcd
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
+
 
 
 
