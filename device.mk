@@ -18,11 +18,22 @@
 
 LOCAL_PATH := device/lenovo/7306F
 
-# A/B
 AB_OTA_PARTITIONS += \
     boot \
+    dtbo \
+    lk \
+    md1img \
+    product \
+    scp \
+    spmfw \
+    sspm \
     system \
-    vendor
+    tee \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor \
+    vendor \
+	vendor_boot
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
