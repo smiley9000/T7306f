@@ -35,3 +35,7 @@ PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-7306F
 PRODUCT_MANUFACTURER := lenovo
 PRODUCT_RELEASE_NAME := Lenovo Lenovo TB-7306F
+
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images
